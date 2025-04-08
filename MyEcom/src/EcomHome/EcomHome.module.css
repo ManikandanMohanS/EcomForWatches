@@ -1,0 +1,91 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  background: url("/images/homewatch.jpg") no-repeat center center/cover;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+/* Overlay for better text visibility */
+.heroOverlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 50px;
+  border-radius: 10px;
+  max-width: 80%;
+  text-align: center;
+}
+
+/* Title Styling */
+.hero h1 {
+  font-size: 4vw; /* Responsive text size */
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Subtitle Styling */
+.hero p {
+  font-size: 1.5vw;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 5vw; /* Larger text for tablets */
+  }
+
+  .hero p {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh; /* Smaller height on smaller screens */
+  }
+
+  .heroOverlay {
+    padding: 30px;
+    max-width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 6vw;
+  }
+
+  .hero p {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 60vh; /* Adjust height for small devices */
+  }
+
+  .heroOverlay {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 7vw;
+  }
+
+  .hero p {
+    font-size: 3vw;
+  }
+}

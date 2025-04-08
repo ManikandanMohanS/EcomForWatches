@@ -1,0 +1,105 @@
+/* Container for entire contact section */
+.contactContainer {
+    padding: 50px 20px;
+    background: linear-gradient(to right, #f8f9fa, #eef1f5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Stylish Header */
+  .contactContainer h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #232f3e; /* Amazon-style dark blue */
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .contactContainer h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #ffa41c; /* Amazon yellow */
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  /* Flex layout for branch boxes */
+  .branchGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  /* Card style with animation and better colors */
+  .branchCard {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .branchCard:hover {
+    transform: translateY(-5px);
+    border-color: #ffa41c;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Border animation effect */
+  .branchCard::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    background: linear-gradient(120deg, transparent, #ffa41c, transparent);
+    background-size: 400% 400%;
+    animation: glowBorder 3s ease infinite;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .branchCard:hover::before {
+    opacity: 0.5;
+  }
+  
+  @keyframes glowBorder {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Content stays above the glowing border */
+  .branchCard > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Text Styling */
+  .branchCard h3 {
+    color: #0f1111;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+  }
+  
+  .branchCard p {
+    margin: 6px 0;
+    color: #2c3e50;
+    line-height: 1.5;
+  }
+  
+  .branchCard strong {
+    color: #111;
+  }
+  
