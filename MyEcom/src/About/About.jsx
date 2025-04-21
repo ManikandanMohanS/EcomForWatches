@@ -42,8 +42,8 @@ const About = () => {
           <h3>📍 Our Locations in Tamil Nadu</h3>
           <iframe
             src="https://www.google.com/maps/d/u/0/embed?mid=1Zhp4xH8vG65fhWjeGTfqUhLHmmR7sBc&ehbc=2E312F&noprof=1"
-            // width="90%"
-            // height="600"
+            width="90%"
+            height="600"
             className={styles.map}
             title="Google Map of Our Locations"
           ></iframe>
