@@ -11,9 +11,11 @@ const EcomProduct = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [showCart, setShowCart] = useState(false);
+  const URI = "https://ecom-for-watches-backend.vercel.app";
+  // const URI = "http://localhost:8000";
 
   useEffect(() => {
-    axios.get("http://localhost:8000/getdata")
+    axios.get(URI+"/getdata")
       .then((res) => {
         setProducts(res.data);
         setLoading(false);
