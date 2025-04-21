@@ -11,7 +11,7 @@ const EcomNav = ({ toggleCart, cartCount, isCartPage, goBackHome }) => {
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-        <div className={styles.logo}>Watches</div>
+        <div className={styles.logo}>Neram</div>
 
         {/* Show Back Button Only in MyCard Page */}
         {isCartPage ? (
