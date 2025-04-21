@@ -33,13 +33,13 @@ const branches = [
   },
   {
     district: "Kanyakumari",
-    manager: "Mr. Rilwan J",
+    manager: "Mr. Kumarasen S",
     phone: "9003456789",
     address: "88, Main Street, Kanyakumari - 629702",
   },
   {
     district: "Trichy",
-    manager: "Mr. Sabarish M",
+    manager: "Mr. Gobinath M",
     phone: "9789098765",
     address: "No. 5, Rockfort Main Road, Trichy – 620002",
   },
