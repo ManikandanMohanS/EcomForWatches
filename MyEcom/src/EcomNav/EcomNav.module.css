@@ -67,7 +67,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    margin-right: 20px; /* Ensures spacing from the right */
+    margin-right: 2px; /* Ensures spacing from the right */
   }
   
   .cartCount {
@@ -75,7 +75,7 @@
     color: black;
     font-size: 0.9rem;
     font-weight: bold;
-    padding: 3px 6px;
+    padding: 2px 6px;
     border-radius: 50%;
     margin-left: 5px;
   }
@@ -85,11 +85,11 @@
     font-size: 2rem;
     cursor: pointer;
     display: none;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 10px;
+    /* background: rgba(255, 255, 255, 0.1); */
+    padding-right: 10px;
     border-radius: 5px;
-    transition: background 0.3s;
-    position: absolute;
+    /* transition: background 0.3s; */
+    /* position: absolute; */
     right: 140px; /* Positions it 30px before the cart icon */
   }
   
@@ -100,21 +100,30 @@
   /* Responsive Styles (Tablet & Mobile) */
   @media (max-width: 924px) { /* Tablet & Mobile View */
     .hamburger {
-      display: block;
+      /* justify-items: end; */
+      margin-left: 10px;
+      display: flex;
+      order:1
     }
+    .cart{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
   
     .navLinks {
       display: none;
       flex-direction: column;
       position: absolute;
       top: 70px; /* Moves dropdown below the hamburger button */
-      right: 10px;
+      right: 0px;
       background-color: black;
       width: 200px;
       border-radius: 10px;
       text-align: center;
       padding: 0;
-      box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
+      /* box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2); */
       overflow: hidden;
     }
   
